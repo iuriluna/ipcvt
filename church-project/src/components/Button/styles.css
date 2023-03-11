@@ -1,0 +1,8 @@
+.button-component {
+  border: 1px solid rgb(47, 47, 47);
+  width: 10rem;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  background: none;
+  cursor: pointer;
+}
