@@ -1,6 +1,42 @@
-.menu {
+
+
+header{
   display: flex;
+  background-color: #0E3C3F;
 }
-.menu h1 {
+
+img{
+  width: 95px;
+  height: 49px;
+  margin-left: 30px;
+  padding-top: 3px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+h1 {
   margin: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: aliceblue;
+
+  cursor: pointer;
 }
+
+h1:hover{
+  font-weight: 500;
+}
+
+.bi-search{
+  color: white;
+  margin-left: 5px;
+  margin-top: 18px;
+  margin-right: 13px;
+}
+
+
+
+
