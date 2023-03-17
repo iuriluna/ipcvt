@@ -17,7 +17,7 @@ nav{
   justify-content: flex-end;
   width: 100%;
 }
-h1 {
+.h1-nav {
   margin: 1rem;
   font-size: 16px;
   font-weight: 400;
@@ -26,7 +26,7 @@ h1 {
   cursor: pointer;
 }
 
-h1:hover{
+.h1-nav:hover{
   font-weight: 500;
 }
 

@@ -1,8 +1,12 @@
 import { useState } from 'react';
-import './styles.css';
+import './styles.css'
+
+
 
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <h1>home</h1>
+  )
 };
 
 export default Home;

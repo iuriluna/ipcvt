@@ -12,9 +12,9 @@ const Menu = () => {
       <header>
         <img src={ImageLogo} alt='logo-ipcvt' />
         <nav>
-          <h1 onClick={() => nav('/sobre')}>Sobre</h1>
-          <h1 onClick={() => nav('/onde')}>Onde</h1>
-          <h1 onClick={() => nav('/doe')}>Doe</h1>
+          <h1 className='h1-nav' onClick={() => nav('/sobre')}>Sobre</h1>
+          <h1 className='h1-nav' onClick={() => nav('/onde')}>Onde</h1>
+          <h1 className='h1-nav' onClick={() => nav('/doe')}>Doe</h1>
           <i className='bi bi-search'></i>
         </nav>
       </header>
