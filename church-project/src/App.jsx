@@ -4,7 +4,7 @@ import Menu from './components/Menu';
 function App() {
   return (
     <main>
-      <Menu />
+      <Menu  />
       <Router />
     </main>
   );
