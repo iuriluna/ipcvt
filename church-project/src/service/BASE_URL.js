@@ -1,1 +1,3 @@
-export const BASE_URL = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyAMtd-DiYjiYFzh4NN-5GXTlsbxMcLb_pY&channelId=UCTStCoaZBPHcZfp-c_RVqlg&part=snippet,id&order=date'
+import { REACT_APP_KEY } from "../config"
+
+export const BASE_URL =`https://www.googleapis.com/youtube/v3/search?key=${REACT_APP_KEY}&channelId=UCTStCoaZBPHcZfp-c_RVqlg&part=snippet,id&order=date`
