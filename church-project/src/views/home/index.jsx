@@ -1,29 +1,37 @@
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from "react";
 import axios from "axios";
 
-import { BASE_URL } from '../../service/BASE_URL';
+import { BASE_URL } from "../../service/BASE_URL";
 
-import './styles.css'
-
+import "./styles.css";
 
 const Home = () => {
+  const [dataBase, setDataBase] = useState([]);
 
-  const [data, setData] = useState([])
-
-  const getData = ()=>{
+  const getData = () => {
     axios.get(BASE_URL).then((response) => {
-      setData(response.data);
+      setDataBase(response.data.items);
     });
-  }
+  };
 
   useEffect(() => {
-    getData()
+    getData();
   }, []);
 
-
   return (
-    <h1>home</h1>
-  )
+    <section>
+      {dataBase.map((video, index) => {
+        return (
+          <a
+            target="_blank"
+            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+          >
+            <img className="thumb" src={video.snippet.thumbnails.high.url} />
+          </a>
+        );
+      })}
+    </section>
+  );
 };
 
 export default Home;
