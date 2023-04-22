@@ -3,7 +3,7 @@ import "./styles.css";
 
 const MainArea = () => {
   return (
-    <section class="mainArea">
+    <section className="mainArea">
       <div className="mainArea__content">
         <h1>Acolhedora.</h1>
         <h1>Transformadora.</h1>
