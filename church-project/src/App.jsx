@@ -1,13 +1,12 @@
-import Router from './routes/Router';
-import Menu from './components/Menu';
-import MainArea from './components/MainArea';
-
+import Router from "./routes/Router";
+import MenuComponent from "./components/MenuComponent";
+import MainArea from "./components/MainArea";
 
 function App() {
   return (
     <main>
-      <Menu/>
-      <MainArea/>
+      <MenuComponent />
+      <MainArea />
       <Router />
     </main>
   );

@@ -1,31 +1,29 @@
-
-
-header{
+header {
   display: flex;
   transition: all ease 0.8s;
   position: fixed;
   width: 100%;
 }
 
-.activeColor{
-
+.activeColor {
   background-color: #282828;
 }
 
-
-img{
+.menu__logo {
   width: 95px;
   height: 49px;
   margin-left: 30px;
   padding-top: 3px;
 }
 
-nav{
+.menu__nav,
+.menu__box {
   display: flex;
   justify-content: flex-end;
   width: 100%;
 }
-.nav {
+
+.menu__link {
   margin: 1rem;
   font-size: 16px;
   font-weight: 400;
@@ -34,17 +32,28 @@ nav{
   cursor: pointer;
 }
 
-.nav:hover{
+.menu__link:hover {
   font-weight: 500;
 }
 
-.bi-search{
+.bi-border-width {
   color: white;
   margin-left: 5px;
   margin-top: 18px;
   margin-right: 13px;
 }
 
+@media (max-width: 700px) {
+  .menu__nav {
+    display: none;
+  }
+  .menu__nav-responsive {
+    display: auto;
+  }
+}
 
-
-
+@media (min-width: 700px) {
+  .menu__nav-responsive {
+    display: none;
+  }
+}

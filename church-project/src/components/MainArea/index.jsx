@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import './styles.css'
+import { useState } from "react";
+import "./styles.css";
 
 const MainArea = () => {
   return (
-  <main>
-      
-      <h1  style={{paddingTop: '60px'}} >Acolhedora.</h1>
-      <h1 >Transformadora.</h1>
-      <p>Comunicando a boa notícia da Redenção.</p>
+    <section className="mainArea">
+      <div className="mainArea__content">
+        <h1>Acolhedora.</h1>
+        <h1>Transformadora.</h1>
+        <p>Comunicando a boa notícia da Redenção.</p>
+      </div>
+    </section>
+  );
+};
 
-  </main>
-  )
-}
-
-
-
-export default MainArea
+export default MainArea;
