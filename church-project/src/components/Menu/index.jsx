@@ -24,10 +24,10 @@ const Menu = () => {
   return (
     <section className="menu">
       <header
-        action={activeColor ? 'true' : undefined}
+        action={activeColor ? "true" : undefined}
         className={activeColor ? "activeColor" : ""}
       >
-        <img src={ImageLogo} alt="logo-ipcvt" />
+        <img onClick={() => nav("/")} src={ImageLogo} alt="logo-ipcvt" />
         <nav>
           <h1 className="nav" onClick={() => nav("/sobre")}>
             Sobre
