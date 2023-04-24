@@ -24,10 +24,14 @@ const Home = () => {
         return (
           <a
             target="_blank"
-            rel='noreferrer'
+            rel="noreferrer"
             href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
           >
-            <img alt='video thumbnail' className="thumb" src={video.snippet.thumbnails.high.url} />
+            <img
+              alt="video thumbnail"
+              className="thumb"
+              src={video.snippet.thumbnails.high.url}
+            />
           </a>
         );
       })}
