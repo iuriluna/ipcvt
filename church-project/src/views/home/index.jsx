@@ -19,24 +19,30 @@ const Home = () => {
   }, []);
 
   return (
-    <section>
+    <section className='container-videos-area' >
       {dataBase.map((video, index) => {
         return (
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
-          >
-            <img
-              alt="video thumbnail"
-              className="thumb"
-              src={video.snippet.thumbnails.high.url}
-            />
-          </a>
-        );
+          <section className='videos-area' >
+            <div className='layout-videos' >
+              <h2 className='title-videos' >{video.snippet.title}</h2>
+              <a 
+                target="_blank"
+                rel='noreferrer' 
+                href={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              >
+                <img 
+                  alt='video thumbnail'
+                  className="thumb"
+                  src={video.snippet.thumbnails.high.url} 
+                />
+              </a>
+            </div>
+            
+          </section>
+        )
       })}
     </section>
-  );
-};
+  )
+}
 
 export default Home;
