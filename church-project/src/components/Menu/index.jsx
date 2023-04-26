@@ -27,7 +27,7 @@ const Menu = () => {
         action={activeColor ? 'true' : undefined}
         className={activeColor ? "activeColor" : ""}
       >
-        <img src={ImageLogo} alt="logo-ipcvt" />
+        <img src={ImageLogo} alt="logo-ipcvt" className='logo-ipcvt' />
         <nav>
           <h1 className="nav" onClick={() => nav("/sobre")}>
             Sobre

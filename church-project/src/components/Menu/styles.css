@@ -7,13 +7,18 @@ header{
   width: 100%;
 }
 
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .activeColor{
 
   background-color: #282828;
 }
 
 
-img{
+.logo-ipcvt{
   width: 95px;
   height: 49px;
   margin-left: 30px;
